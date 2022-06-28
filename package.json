@@ -1,0 +1,19 @@
+{
+  "name": "docker-compose-mono-repo-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:itaywol/docker-compose-mono-repo-example.git",
+  "author": "Itay Wolfish <wo.itay@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "app1",
+    "app2",
+    "libs/logger",
+    "libs/middlewares-lib"
+  ],
+  "private": true,
+  "dependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  }
+}

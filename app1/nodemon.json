@@ -1,0 +1,10 @@
+{
+  "restartable": "rs",
+  "ignore": ["dist"],
+  "watch": ["src/"],
+  "execMap": {
+    "ts": "yarn build && yarn start"
+  },
+  "ext": "js,json,ts",
+  "delay": 250
+}

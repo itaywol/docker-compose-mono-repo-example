@@ -1,0 +1,16 @@
+{
+  "name": "app2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "logger": "1.0.0",
+    "middlewares-lib": "1.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --config nodemon.json ./src/index.ts"
+  }
+}
