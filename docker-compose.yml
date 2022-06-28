@@ -24,3 +24,22 @@ services:
       - "3001:3001"
     volumes:
       - ./:/home/app
+
+  logger:
+    build:
+      context: .
+      args:
+        - APP=logger
+    container_name: logger_builder
+    command: yarn workspace logger run build:watch
+    volumes:
+      - ./:/home/app
+  middlewares-lib:
+    build:
+      context: .
+      args:
+        - APP=middlewares-lib
+    container_name: middlewares_lib_builder
+    command: yarn workspace middlewares-lib run build:watch
+    volumes:
+      - ./:/home/app
